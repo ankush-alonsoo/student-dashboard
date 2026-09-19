@@ -2,40 +2,27 @@ import { useState } from 'react'
 
 import './App.css'
 
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import StudentCard from "./components/StudentCard"
+
 function App() {
  
 
   return (
     <>
+
+    <Header name="Ankush"/>
       
-    <header>
-        <h1> Student DashBoard</h1>
-        <p>Welcome to student portal</p>
-    </header>
-
     <main className='grid'>
-      <div className='card'>
-        <h2>Attendace</h2>
-        <p>92%</p>
-      </div>
-
-        <div className='card'>
-        <h2>CGPA</h2>
-        <p>8.95</p>
-      </div>
-
-
-        <div className='card'>
-        <h2>Courses</h2>
-        <p>6</p>
-      </div>
+      
+    <StudentCard cgpa="9.3"/>
+    <StudentCard cgpa="8.9"/>
+    <StudentCard cgpa="9.1"/>
 
     </main>
 
-    <footer>
-      <p>© 2026 Student Portal</p>
-    </footer>
-
+    <Footer/>
 
     </>
   )
